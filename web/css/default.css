@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .file-wrapper {
     position: absolute;
     top: 50%;
@@ -29,6 +25,7 @@ body {
     border: 1px solid gray;
     border-radius: 3px;
     color: gray;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 36px;
     cursor: pointer;
     display: inline-block;
