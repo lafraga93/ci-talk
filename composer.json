@@ -1,5 +1,7 @@
 {
     "name": "lafraga93/start",
+    "description": "Projeto utilizado no meetup de integração contínua em projetos PHP",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Gustavo Fraga",
@@ -17,6 +19,7 @@
         }
     },
     "require": {
+        "php": "^7.3",
         "mpdf/mpdf": "^8.0",
         "bramus/router": "~1.4",
         "symfony/http-foundation": "^4.3"
