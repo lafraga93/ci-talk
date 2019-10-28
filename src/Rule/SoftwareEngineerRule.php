@@ -11,7 +11,7 @@ final class SoftwareEngineerRule implements PositionRuleInterface
     /**
      * @var float
      */
-    const BONUS_VALUE = 590.25;
+    const BONUS_VALUE = 800.25;
 
     public function calculate(float $baseSalary): float
     {
