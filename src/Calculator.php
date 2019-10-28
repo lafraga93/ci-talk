@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-
-
 namespace App;
 
-final class Calculator{
+final class Calculator
+{
     /**
      * @var Employee
      */
     private $employee;
 
-    public function __construct(EmployeeInterface $employee){
+    public function __construct(EmployeeInterface $employee)
+    {
         $this->employee = $employee;
     }
 
     public function calculate(): float
     {
-        $position       = new Position($this->employee->getPosition());
+        $position = new Position($this->employee->getPosition());
 
         return $position->getRule()->calculate($this->employee->getBaseSalary());
     }
