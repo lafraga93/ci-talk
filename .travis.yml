@@ -1,8 +1,12 @@
 language: php
 php:
   - '7.3'
-before_script: composer install -o --no-progress
-after_script: php vendor/bin/codacycoverage clover build/coverage/xml
+before_script: 
+  - composer install -o --no-progress
+script:
+  - vendor/bin/phpunit --coverage-clover build/coverage/xml
+after_script:
+  - vendor/bin/codacycoverage clover build/coverage/xml
 deploy:
   provider: heroku
   api_key:
