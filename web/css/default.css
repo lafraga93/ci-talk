@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.file-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-wrapper input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.01;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+.file-wrapper .button {
+    padding: 15px 25px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: gray;
+    font-size: 36px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+}
