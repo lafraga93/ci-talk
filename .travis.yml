@@ -2,3 +2,7 @@ language: php
 php:
   - '7.3'
 before_script: composer install -o --no-progress
+deploy:
+  provider: heroku
+  api_key:
+    secure: heroku-api-key
