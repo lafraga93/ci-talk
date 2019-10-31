@@ -6,6 +6,8 @@
 
 ## Projeto utilizado no meetup de integração contínua em projetos PHP
 
+https://speakerdeck.com/lafraga93/integracao-continua-com-github-travisci-e-heroku
+
 ### Dependencies
 
 `composer install`
