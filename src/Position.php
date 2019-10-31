@@ -10,8 +10,8 @@ final class Position
      * @var array
      */
     private $positions = [
-        "software_engineer" => "App\Rule\SoftwareEngineerRule",
-        "trainee" => "App\Rule\TraineeRule",
+        'software_engineer' => "App\Rule\SoftwareEngineerRule",
+        'trainee'           => "App\Rule\TraineeRule",
     ];
 
     /**
@@ -26,6 +26,6 @@ final class Position
 
     public function getRule(): object
     {
-        return new $this->rule;
+        return new $this->rule();
     }
 }
