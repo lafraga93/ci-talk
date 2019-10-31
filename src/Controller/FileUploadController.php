@@ -53,7 +53,6 @@ final class FileUploadController
         ';
 
         foreach ($data->funcionarios as $key => $value) {
-
             $employee = new Employee();
 
             $employee->setId($value->codigo);
@@ -66,11 +65,11 @@ final class FileUploadController
 
             $output .= '
                 <tr>
-                    <td>' . $employee->getId()  . '</td>
-                    <td>' . $employee->getName() . '</td>
-                    <td>' . $employee->getPosition() . '</td>
-                    <td>' . $employee->getBaseSalary()  . '</td>
-                    <td>' . $salaryWithBonus . '</td>
+                    <td>'.$employee->getId().'</td>
+                    <td>'.$employee->getName().'</td>
+                    <td>'.$employee->getPosition().'</td>
+                    <td>'.$employee->getBaseSalary().'</td>
+                    <td>'.$salaryWithBonus.'</td>
                 </tr>
             ';
         }
@@ -79,7 +78,7 @@ final class FileUploadController
 
         $mpdf->WriteHTML($output);
 
-        $filename = 'pdf/' . uniqid() . '.pdf';
+        $filename = 'pdf/'.uniqid().'.pdf';
         $mpdf->Output($filename, \Mpdf\Output\Destination::FILE);
 
         return $filename;

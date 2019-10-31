@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace App;
 
-use App\EmployeeInterface;
-use App\Position;
-
 final class Calculator
 {
     /**
@@ -20,7 +17,7 @@ final class Calculator
     }
 
     public function calculate(): float
-    {     
+    {
         $position = new Position($this->employee->getPosition());
 
         return $position->getRule()->calculate($this->employee->getBaseSalary());
@@ -28,7 +25,7 @@ final class Calculator
 
     /*
     public function calculate(): float
-    {     
+    {
         if ($this->employee->getPosition() == 'trainee') {
             return $this->employee->getBaseSalary() + 150.10;
         }

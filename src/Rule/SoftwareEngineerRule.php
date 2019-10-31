@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace App\Rule;
 
-use App\Rule\PositionRuleInterface;
-
 final class SoftwareEngineerRule implements PositionRuleInterface
 {
     /**
